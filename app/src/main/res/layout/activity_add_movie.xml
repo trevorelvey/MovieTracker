@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.guest.movietracker.ui.AddMovie"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Movie"
+        android:id="@+id/addMovieText"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/colorSecondaryText"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView4"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitMovieButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Add Movie"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Movie Title"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_below="@+id/addMovieText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="94dp" />
+
+    <EditText
+        android:id="@+id/directorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Director"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_below="@+id/titleEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Year"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_below="@+id/directorEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/yearEditText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
