@@ -14,6 +14,7 @@ import com.epicodus.guest.movietracker.R;
 import com.firebase.client.Firebase;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
     @Bind(R.id.addMovieButton) Button mAddMovieButton;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
         mFirebaseRef = new Firebase(Constants.FIREBASE_URL);
 

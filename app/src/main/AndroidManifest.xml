@@ -20,7 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AddMovie"></activity>
+        <activity android:name=".ui.AddMovie">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epicodus.guest.movietracker.ui.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
