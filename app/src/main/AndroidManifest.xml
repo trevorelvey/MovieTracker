@@ -25,6 +25,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.epicodus.guest.movietracker.ui.MainActivity" />
         </activity>
+        <activity android:name=".ui.SavedMoviesActivity"></activity>
     </application>
 
 </manifest>

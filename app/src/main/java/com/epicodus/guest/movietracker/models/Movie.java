@@ -7,12 +7,12 @@ public class Movie {
     private String title;
     private String director;
     private String year;
-    private double rating;
+    private int rating;
     private String pushId;
 
     public Movie() {}
 
-    public Movie(String title, String director, String year, double rating) {
+    public Movie(String title, String director, String year, int rating) {
         this.title = title;
         this.director = director;
         this.year = year;
@@ -31,7 +31,7 @@ public class Movie {
         return year;
     }
 
-    public double getRating() {
+    public int getRating() {
         return rating;
     }
 

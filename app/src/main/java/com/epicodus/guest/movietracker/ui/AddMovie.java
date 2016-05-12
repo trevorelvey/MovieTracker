@@ -50,7 +50,7 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener 
         final String title = mTitleEditText.getText().toString();
         final String director = mDirectorEditText.getText().toString();
         final String year = mYearEditText.getText().toString();
-        final double rating = mRatingBar.getNumStars();
+        final int rating = mRatingBar.getNumStars();
         Movie movie = new Movie(title, director, year, rating);
 
         String uid = mFirebaseRef.getAuth().getUid();

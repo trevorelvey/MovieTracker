@@ -16,7 +16,7 @@ import com.firebase.client.Firebase;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.addMovieButton) Button mAddMovieButton;
     @Bind(R.id.movieListButton) Button mMovieListButton;
     private Firebase mFirebaseRef;
@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mMovieListButton.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == mMovieListButton) {
+            Intent intent = new Intent(MainActivity.this, SavedMoviesActivity.class);
+            startActivity(intent);
+        }
     }
 
     @Override
